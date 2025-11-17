@@ -1,0 +1,12 @@
+name: CI Pipeline
+
+on:
+  push:
+
+jobs:
+  print-success:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print CI execution success
+        run: echo "CI pipeline executed successfully 🎉"
